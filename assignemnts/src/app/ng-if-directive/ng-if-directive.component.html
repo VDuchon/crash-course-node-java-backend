@@ -1,0 +1,8 @@
+<h1>This is ngIf directive assignment</h1>
+<button (click)="increaseX()"> Increase X</button>
+<button (click)="decreaseX()"> Decrease X</button>
+<button (click)="increaseY()"> Increase Y</button>
+<button (click)="decreaseY()"> Decrease Y</button>
+
+<p *ngIf="x > y; else elseBlock"> X:{{ x }} is more then Y:{{ y }}</p>
+<ng-template #elseBlock> Y:{{ y }} is more then X:{{ x }}<ng-template>

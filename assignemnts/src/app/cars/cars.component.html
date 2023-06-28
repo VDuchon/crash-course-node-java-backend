@@ -1,0 +1,9 @@
+<button (click)="toggleHide()">Show / Hide cars</button>
+
+<div [hidden]="getHidden()">
+  <ul *ngFor="let car of getCars()" >
+    <li (mouseout)="toggleHide()">Car maker: {{ car.make }}</li>
+    <li>Model: {{ car.model }}</li>
+    <li>Year: {{ car.year }}</li>
+  </ul>
+</div>
