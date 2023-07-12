@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Capital</th>
+        <th>Flag</th>
+        <th>Currency</th>
+    </thead>
+    <tr *ngFor="let country of data">
+        <td>{{country.name.common}}</td>
+        <td>{{country.capital}}</td>
+        <td><img src="{{country.flags.png}}"></td>
+        <td>{{getCountryCurrency(country)}}</td>
+    </tr>
+        
+</table>
