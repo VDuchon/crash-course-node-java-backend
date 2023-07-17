@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="my_message">
+<button (click)="covert({'message':my_message})">Submit</button>
+<br/>
+<p>{{result | json}}</p>
