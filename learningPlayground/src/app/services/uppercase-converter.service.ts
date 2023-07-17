@@ -17,6 +17,9 @@ export class UppercaseConverterService {
   // from origin 'http://localhost:4200' has been blocked by CORS policy: 
   //  Response to preflight request doesn't pass access control check: 
   //    No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+  // Tested with free online JSON placeholder API
+  // Check https://jsonplaceholder.typicode.com/guide/ for details
   public getUppercase(obj:any): Observable<any> {
     return this._httpClient.post("http://localhost:8080/rest/uppercase", obj)
   }
